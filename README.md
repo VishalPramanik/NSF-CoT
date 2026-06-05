@@ -16,9 +16,6 @@
 
 ---
 
-> **Note** &nbsp; The arXiv identifier above is a placeholder (`XXXX.XXXXX`).
-> Replace every `XXXX.XXXXX` in this README and in `CITATION.cff` with the real
-> NSF-CoT arXiv ID once it is assigned.
 
 ## Overview
 
