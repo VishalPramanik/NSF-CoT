@@ -1,0 +1,14 @@
+# Core dependencies -- required for the offline demo, the library, and the tests.
+z3-solver>=4.12
+scikit-learn>=1.2
+numpy>=1.23
+
+# --- Optional: real backends (paper configuration) -------------------------
+# Install these to run scripts/run_eval.py with real models instead of the
+# deterministic offline mocks.
+#
+#   pip install torch transformers   # HuggingFaceLM (Pythia / LLaMA / Qwen)
+#   pip install openai               # OpenAIParser (o3) + OpenAIJudge (o1-preview)
+#
+# --- Optional: development --------------------------------------------------
+#   pip install pytest               # test suite

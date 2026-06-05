@@ -1,0 +1,48 @@
+{
+  "dataset": "OpenBookQA",
+  "question": "A hummingbird would be unable to survive in which location? (A) tropical rainforest (B) temperate garden (C) Antarctica (D) mountain meadow",
+  "gold": "(C) Antarctica",
+  "facts": [
+    "Hummingbirds feed primarily on nectar from flowers.",
+    "Antarctica has no native flowering plants due to its extreme cold.",
+    "Hummingbirds have the highest metabolic rate among birds.",
+    "Antarctica is the coldest continent on Earth."
+  ],
+  "fact_atoms": [
+    ["HasPrerequisite(hummingbird, nectar)"],
+    ["not AtLocation(nectar, antarctica)"],
+    ["HasProperty(hummingbird, high_metabolic_rate)"],
+    ["not CapableOf(hummingbird, survive_antarctica)"]
+  ],
+  "steps": [
+    {
+      "text": "Hummingbirds require nectar from flowers as their primary food source.",
+      "atoms": ["HasPrerequisite(hummingbird, nectar)"]
+    },
+    {
+      "text": "Antarctica has no flowering plants that could provide nectar.",
+      "atoms": ["not AtLocation(nectar, antarctica)"]
+    },
+    {
+      "text": "Without nectar, hummingbirds would have no viable food source in Antarctica.",
+      "atoms": ["not AtLocation(nectar, antarctica)"]
+    },
+    {
+      "text": "Hummingbirds also cannot regulate body temperature below -40C due to their small mass.",
+      "atoms": ["not CapableOf(hummingbird, thermoregulate)"]
+    },
+    {
+      "text": "Therefore, a hummingbird cannot survive in Antarctica.",
+      "atoms": ["not CapableOf(hummingbird, survive_antarctica)"]
+    }
+  ],
+  "answer_text": "Therefore, a hummingbird cannot survive in Antarctica.",
+  "answer_atom": "not CapableOf(hummingbird, survive_antarctica)",
+  "relevance": {
+    "0": [0],
+    "1": [1],
+    "2": [0, 1],
+    "3": [],
+    "4": [0, 1, 3]
+  }
+}

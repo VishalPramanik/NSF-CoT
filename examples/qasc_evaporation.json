@@ -1,0 +1,48 @@
+{
+  "dataset": "QASC",
+  "question": "What process causes a wet shirt to become dry when hung outside?",
+  "gold": "Evaporation",
+  "facts": [
+    "Evaporation is the process where liquid water changes into water vapor.",
+    "Heat increases the rate of evaporation.",
+    "Sunlight can warm objects by providing heat energy.",
+    "Wet clothing contains liquid water."
+  ],
+  "fact_atoms": [
+    ["Causes(evaporation, water_to_vapor)"],
+    ["Causes(heat, evaporation)"],
+    ["Causes(sunlight, heat)"],
+    ["HasA(clothes, liquid_water)"]
+  ],
+  "steps": [
+    {
+      "text": "Wet clothing contains liquid water.",
+      "atoms": ["HasA(clothes, liquid_water)"]
+    },
+    {
+      "text": "Sunlight provides heat that warms the shirt.",
+      "atoms": ["Causes(sunlight, heat)"]
+    },
+    {
+      "text": "Heat increases the rate at which water evaporates into vapor.",
+      "atoms": ["Causes(heat, evaporation)"]
+    },
+    {
+      "text": "Wind always removes all water molecules faster than heat does.",
+      "atoms": ["HasProperty(wind, always_dominates)"]
+    },
+    {
+      "text": "Therefore, the shirt dries due to evaporation.",
+      "atoms": ["Causes(sunlight, water_to_vapor)"]
+    }
+  ],
+  "answer_text": "Therefore, the shirt dries due to evaporation.",
+  "answer_atom": "Causes(sunlight, water_to_vapor)",
+  "relevance": {
+    "0": [3],
+    "1": [2],
+    "2": [1],
+    "3": [],
+    "4": [0, 1, 2]
+  }
+}

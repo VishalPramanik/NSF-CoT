@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nsfcot"
+version = "1.0.0"
+description = "Neuro-Symbolic Formal Verification of Chain-of-Thought Faithfulness in Contextual Question Answering"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Vishal Pramanik", email = "vishalpramanik@ufl.edu" },
+    { name = "Maisha Maliha" },
+    { name = "Nathaniel D. Bastian" },
+    { name = "Alvaro Velasquez" },
+    { name = "Susmit Jha" },
+    { name = "Sumit Kumar Jha" },
+]
+keywords = ["chain-of-thought", "faithfulness", "neuro-symbolic", "SMT", "interpretability", "NLP"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "z3-solver>=4.12",
+    "scikit-learn>=1.2",
+    "numpy>=1.23",
+]
+
+[project.optional-dependencies]
+hf = ["torch", "transformers"]
+openai = ["openai"]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/VishalPramanik/NSF-CoT"
+Repository = "https://github.com/VishalPramanik/NSF-CoT"
+Paper = "https://arxiv.org/abs/XXXX.XXXXX"
+
+[tool.setuptools]
+packages = ["nsfcot"]

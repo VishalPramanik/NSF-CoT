@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "NSF-CoT: Neuro-Symbolic Formal Verification of Chain-of-Thought Faithfulness in Contextual Question Answering"
+authors:
+  - family-names: Pramanik
+    given-names: Vishal
+    affiliation: University of Florida
+  - family-names: Maliha
+    given-names: Maisha
+    affiliation: University of Oklahoma
+  - family-names: Bastian
+    given-names: Nathaniel D.
+    affiliation: United States Military Academy
+  - family-names: Velasquez
+    given-names: Alvaro
+    affiliation: University of Colorado Boulder
+  - family-names: Jha
+    given-names: Susmit
+    affiliation: SRI International
+  - family-names: Jha
+    given-names: Sumit Kumar
+    affiliation: University of Florida
+year: 2026
+# TODO: replace XXXX.XXXXX with the assigned NSF-CoT arXiv identifier.
+identifiers:
+  - type: other
+    value: "arXiv:XXXX.XXXXX"
+    description: arXiv preprint
+preferred-citation:
+  type: conference-paper
+  title: "NSF-CoT: Neuro-Symbolic Formal Verification of Chain-of-Thought Faithfulness in Contextual Question Answering"
+  collection-title: "Findings of the Association for Computational Linguistics: ACL 2026"
+  year: 2026
+  authors:
+    - family-names: Pramanik
+      given-names: Vishal
+    - family-names: Maliha
+      given-names: Maisha
+    - family-names: Bastian
+      given-names: Nathaniel D.
+    - family-names: Velasquez
+      given-names: Alvaro
+    - family-names: Jha
+      given-names: Susmit
+    - family-names: Jha
+      given-names: Sumit Kumar
