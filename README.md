@@ -209,8 +209,7 @@ If you use NSF-CoT in your research, please cite:
   author    = {Pramanik, Vishal and Maliha, Maisha and Bastian, Nathaniel D. and
                Velasquez, Alvaro and Jha, Susmit and Jha, Sumit Kumar},
   booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
-  year      = {2026},
-  note      = {arXiv:XXXX.XXXXX}
+  year      = {2026}
 }
 ```
 
